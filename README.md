@@ -8,15 +8,33 @@
 ### Codigo
 El codigo entre comillas simples lo podemos llamar: `git status` pero para darle espacios con 3 comillas:
 ```
-git status
+git status -s
 ```
-### Links
-Para crear enlaces o links dentro al clicar las palabras: [Esemtia](https://danielcastelao.esemtia.net/moodle/my/)
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
 
+### Links
 #### Links dentro del mismo documento?
+#### Links en la web
+Para crear enlaces o links dentro al clicar las palabras: [Esemtia](https://danielcastelao.esemtia.net/moodle/my/).
 
 #### Links relativos
 Es un enlace relativo al archivo actual. De esta forma podemos acceder facilmente el [readme](Readme2.txt) facilmente. Esto nos sirve para por ejemplo hacer una carpeta con [imagenes](./Imagenes/imgagen1.jpg) donde tengamos todas.
   
 #### Imagenes
 ![Esto es una imgagen](https://images.unsplash.com/photo-1601814933824-fd0b574dd592?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFieSUyMHlvZGF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60)
+
+### Crear pestañas
+  <details><summary><h4>Pestaña</h4></summary>
+  <p><h8>informacion de la pestaña</8></p>
+</details>
+
+### Para crear listas
+  * titulo1
+  * titulo2
+  1. titulo1
+  2. titulo2
+
